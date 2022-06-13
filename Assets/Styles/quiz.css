@@ -1,0 +1,139 @@
+* {
+    font-size: 16px;
+}
+
+h2 {
+    color: #00497c;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.question-container {
+    border-bottom: 2px solid rgb(214, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    padding: 0 150px 10px 150px;
+    margin: 25px 0 15px 0;
+}
+
+.choice-container {
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(86, 165, 235, 0.4);
+    border-radius: 10px;
+    display: flex;
+    height: 48px;
+    margin: 10px;
+    width: 302px;
+}
+
+.choice-container:hover {
+    background-color: #0fd9de;
+    box-shadow: 0 6px 20px 0 rgba(86, 185, 235, 0.5);
+    cursor: pointer;
+    transform: translateY(1.6px);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    background-color: #e2fdf9;
+    border-radius: 12px;
+    color: #195c7d;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    margin: 5px 10px;
+    width: 30px;
+}
+
+.choice-prefix:hover {
+    background-color: #195c7d;
+    color: white;
+}
+
+.choice-text {
+    color: #00497c;
+    font-weight: 400;
+    padding: 5px;
+    width: 100%;
+}
+
+.correct {
+    /* background-color: #28a745; */
+}
+
+.incorrect {
+    /* background-color: #dc3545; */
+}
+
+#hud {
+    /* display: block;
+    justify-content: space-around;
+    padding-left: 40px;
+    height: 5rem; */
+}
+
+.hud-prefix {
+    /* text-align: center; */
+}
+
+.hud-main-text {
+    /* text-align: center; */
+}
+
+#quiz {
+    position: relative;
+}
+
+#progressBar {
+    /* background-color: #baf2eb;
+    height: 0.8rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    width: 700px;
+    position: absolute;
+    bottom: 364px;
+    left: 0px;
+    right: 0px; */
+}
+
+#progressBarFull {
+    /* background-color: #01c6ca;
+    height: 0.6rem;
+    width: 0%; */
+}
+
+/* #question {
+    padding-left: 40px;
+} */
+
+.img01 {
+    /* position: absolute;
+    top: 15.5rem;
+    left: 50rem; */
+}
+
+/* LOADER */
+#loader {
+    /* animation: spin 2s linear infinite;
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    height: 12rem;
+    width: 12rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
