@@ -75,20 +75,20 @@ h3 {
 }
 
 .hidden {
-    /* display: none; */
+    display: none;
 }
 
 /* BUTTONS */
 .btn {
     background-color: white;
-    border: 0.1rem solid #56a5eb;
+    border: 1px solid #56a5eb;
     color: #56a5eb;
-    font-size: 30px;
-    margin-bottom: 16px;
-    padding: 16px 0;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    width: 320px;
+    width: 250px;
 }
 
 .btn:hover {
@@ -116,11 +116,11 @@ form {
 
 input {
     border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    width: 20rem;
+    box-shadow: box-shadow: 0 14px 24px 0 rgba(86, 185, 235, 0.5);
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    width: 250px;
 }
 
 input::placeholder {

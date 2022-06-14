@@ -4,7 +4,7 @@ const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
-const quiz = document.getElementById("quiz");
+const game = document.getElementById("quiz");
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -14,7 +14,9 @@ let availableQuestions = [];
 
 let questions = [];
 
-fetch("https://opentdb.com/api.php?amount=10&category=19&difficulty=medium&type=multiple")
+fetch(
+    "https://opentdb.com/api.php?amount=10&category=19&difficulty=medium&type=multiple"
+)
     .then(res => {
         return res.json();
     })

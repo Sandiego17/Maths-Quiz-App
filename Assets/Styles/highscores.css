@@ -1,0 +1,37 @@
+#highScoresList {
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+
+.high-score {
+    border: 1px solid #56a5eb;
+    color: #00497c;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#highScores li:nth-child(1) {
+    background-color: #56a5eb;
+}
+
+#highScores li:nth-child(1) span{
+    color: white;
+}
+
+#highScores li:nth-child(1){
+    position: relative;
+}
+#highScores li:nth-child(1)::after{
+    content: url('../Images/img_-_08.png');
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    bottom: 37px;
+    left: 180px;
+    object-fit: cover;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
