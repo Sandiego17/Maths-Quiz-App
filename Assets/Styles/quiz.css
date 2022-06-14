@@ -14,10 +14,10 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 75px;
+    height: 85px;
     width: 100%;
-    padding: 0 150px 10px 150px;
-    margin: 25px 0 15px 0;
+    padding: 8px 135px;
+    margin: 5px 0;
 }
 
 .choice-container {
@@ -27,7 +27,7 @@ h2 {
     border-radius: 10px;
     display: flex;
     height: 48px;
-    margin: 10px;
+    margin: 3px;
     width: 302px;
 }
 
@@ -73,55 +73,77 @@ h2 {
 }
 
 #hud {
-    /* display: block;
+    color: #00497c;
+    display: block;
     justify-content: space-around;
-    padding-left: 40px;
-    height: 5rem; */
+    height: 25px;
 }
 
-.hud-prefix {
-    /* text-align: center; */
-}
-
-.hud-main-text {
-    /* text-align: center; */
+#hud-item {
+    font-weight: 500;
+    text-align: center;
 }
 
 #quiz {
     position: relative;
+    margin-bottom: 85px;
+    /* width: 700px; */
 }
 
 #progressBar {
-    /* background-color: #baf2eb;
-    height: 0.8rem;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+    background-color: #baf2eb;
+    height: 10px;
     width: 700px;
     position: absolute;
-    bottom: 364px;
-    left: 0px;
-    right: 0px; */
+    bottom: 351px;
 }
 
 #progressBarFull {
-    /* background-color: #01c6ca;
-    height: 0.6rem;
-    width: 0%; */
+    background-color: #01c6ca;
+    height: 10px;
+    width: 0%;
 }
 
-/* #question {
-    padding-left: 40px;
-} */
-
+/* IMAGES */
 .img01 {
-    /* position: absolute;
-    top: 15.5rem;
-    left: 50rem; */
+    position: absolute;
+    top: 120px;
+    left: 484px;
+}
+
+.img02 {
+    position: absolute;
+    top: 100px;
+    left: 590px;
+}
+
+.img03 {
+    position: absolute;
+    top: 250px;
+    left: 467px;
+}
+
+.img04 {
+    position: absolute;
+    top: 73px;
+    left: 12px;
+}
+
+.img05 {
+    position: absolute;
+    top: 230px;
+    right: 600px;
+}
+
+.img06 {
+    position: absolute;
+    top: 335px;
+    right: 450px;
 }
 
 /* LOADER */
-#loader {
-    /* animation: spin 2s linear infinite;
+/* #loader {
+    animation: spin 2s linear infinite;
     border: 1.6rem solid white;
     border-radius: 50%;
     border-top: 1.6rem solid #56a5eb;
