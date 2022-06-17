@@ -5,18 +5,19 @@ const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("quiz");
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 10;
+
 
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
 let questions = [];
 
-fetch(
-    "https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=multiple"
-)
+
+fetch("https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=multiple")
     .then(res => {
         return res.json();
     })
@@ -48,10 +49,6 @@ fetch(
         console.error(err);
     });
 
-//CONSTANTS
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
-
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -64,14 +61,12 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
         localStorage.setItem("mostRecentScore", score);
-        //go to the end page
-        return window.location.assign("../end.html");
+        return window.location.assign("../end.html"); //go to the end page
     }
     console.log(score);
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-    //Update the progress bar
-    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`; //Update the progress bar
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];

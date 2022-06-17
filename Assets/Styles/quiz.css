@@ -15,7 +15,8 @@ h2 {
     justify-content: center;
     text-align: center;
     height: 85px;
-    width: 100%;
+    width: 700px;
+    max-width: 700px;
     padding: 8px 135px;
     margin: 5px 0;
 }
