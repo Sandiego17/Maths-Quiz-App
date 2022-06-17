@@ -1,2 +1,2 @@
 # Science-Nature-Quiz-App
-This is a mathematics quiz software or application
+This is a quiz software or application for science and nature questions.
