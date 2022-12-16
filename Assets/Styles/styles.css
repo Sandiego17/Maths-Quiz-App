@@ -1,5 +1,9 @@
 body {
     background-image: linear-gradient(#e9fffc, #96eae5, #70e2db);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 * {
@@ -25,7 +29,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 85px auto;
 }
 
 .container > * {
